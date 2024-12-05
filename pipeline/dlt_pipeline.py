@@ -1,6 +1,6 @@
 # Databricks notebook source
 import notebooks.my_module as my_module
-import dlt
+# import dlt
 
 # COMMAND ----------
 
