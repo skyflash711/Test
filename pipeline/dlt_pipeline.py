@@ -1,5 +1,5 @@
 # Databricks notebook source
-import notebooks.my_module as my_module
+import utils as T
 import dlt
 
 # COMMAND ----------
@@ -9,7 +9,7 @@ import dlt
     comment="Raw streaming source table"
 )
 def source_stream():
-  print(my_module.hello_world())
+  print(T.test_my_module())
   table_name = "main.default.dummy_streaming_table"
   checkpoint_directory = "/Volumes/main/default/sarvesh_experiment/"
   source_format = "delta"
